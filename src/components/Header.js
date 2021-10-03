@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
@@ -12,11 +11,11 @@ function Header() {
                 <img src="/images/logo.svg" />
             </a>
             <Menu>
-                <a href="#">Model S</a>
-                <a href="#">Model 3</a>
-                <a href="#">Model X</a>
-                <a href="#">Model Y</a>
-                <a href="#">Acceroies</a>
+                <a href="#model-s">Model S</a>
+                <a href="#model-3">Model 3</a>
+                <a href="#model-x">Model X</a>
+                <a href="#model-y">Model Y</a>
+                <a href="#accessories">Acceroies</a>
             </Menu>
             <RightMenu>
                 <a href="#">Shop</a>
@@ -114,4 +113,3 @@ const CloseWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
 `
-
